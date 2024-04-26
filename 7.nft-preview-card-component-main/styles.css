@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.equilibrium{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url(/images/image-equilibrium.jpg);
+    background-size: cover;
+}
+
+.equilibrium:hover{
+    background-image: url(/images/icon-view.svg),linear-gradient(hsla(178, 100%, 50%, 0.334),hsl(178, 100%, 50%,0.334)),url(/images/image-equilibrium.jpg);
+    background-size: 40px,cover,cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h3{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.maintext{
+    color:hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.deadline{
+    color:hsl(215, 51%, 70%);
+    font-size: 13px;
+}
+
+.creator{
+    color:hsl(215, 51%, 70%);
+    margin: 15px 0px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    color: white;
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.av{
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.ethav{
+    height: 14px;
+    margin-right: 5px;
+}
+
+.deadline{
+    display: flex;
+    align-items: center;
+}
+
+.clock{
+    height: 13px;
+}

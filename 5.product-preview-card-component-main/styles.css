@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+}
+
+.card{
+        border-radius: 8px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.perfume{
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+}
+
+h1{
+    font-family: Fraunces;
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+}
+
+.discount{
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-family: Fraunces;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.og{
+    text-decoration: line-through;
+}
+
+button{
+    font-family: Montserrat;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: hsl(158, 36%, 29%);
+}
+
+.cart-icon{
+    margin-right: 8px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 375px){
+    .card{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (min-width: 376px){
+    .card{
+     width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}

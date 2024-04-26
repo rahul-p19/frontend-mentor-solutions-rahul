@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    height: 95vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px 0px black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#vector {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.text {
+    margin:15px 15px 0px 15px;
+    font-family: Figtree;
+    color: hsl(0, 0%, 7%);
+}
+.learn {
+    background-color: hsl(47, 88%, 63%);
+    font-weight: 800;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline;
+}
+
+.p1{
+    font-size: 11px;
+}
+
+.p2{
+    font-size: 13px;
+    color: hsl(0, 0%, 50%);
+}
+
+.writer {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+}
+
+#av {
+    height: 50%;
+    margin-right: 10px;
+}
+
+.p3{
+    margin-top: 9px;
+    font-size: 12px;
+    font-family: Figtree;
+    font-weight: 800;
+}
+
+.container:hover {
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+h3:hover {
+    color: hsl(47, 88%, 63%);
+}

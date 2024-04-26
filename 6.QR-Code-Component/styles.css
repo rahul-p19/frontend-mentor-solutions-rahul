@@ -1,0 +1,45 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+}
+
+.flex-container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 475px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.photo {
+    height:58%;
+}
+
+#qr {
+    border-radius: 7.5px;
+    height: 100%;
+    margin: 12px 0px;
+}
+
+.text {
+    width: 80%;
+    text-align: center;
+    font-family: Outfit;
+}
+
+h2 {
+    font-size: 20px;
+    color: hsl(218, 44%, 22%);
+}
+p {
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+}
