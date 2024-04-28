@@ -3,69 +3,108 @@
     padding: 0;
 }
 
-html{
-    scrollbar-width: thin;
-}
-
 body{
-    font-family: 'Space Grotesk';
-    text-align: center;
-    margin-top: 2rem;
-    background-image: repeating-linear-gradient(0deg, rgba(180,176,176, 0.2) 0px, rgba(180,176,176, 0.2) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgba(180,176,176, 0.2) 0px, rgba(180,176,176, 0.2) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, rgb(238,226,220),rgb(238,226,220));
-    color: hsl(240, 62%, 8%);
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 3rem;
-    padding: 0px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
 }
 
 .card{
-    margin-inline: auto;
-    width: 70%;
-    margin-block: 1.5rem;
-    background-color: #eec6b3;
-    padding: 20px;
-    border-radius: 10px;
+        border-radius: 8px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.perfume{
+    background-image: url(/frontend-mentor-solutions-rahul/5.product-preview-card-component-main/images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.info{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10%;
 }
 
-.card img{
-    width: 95%;
+h1{
+    font-family: Fraunces;
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+}
+
+.discount{
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-family: Fraunces;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.og{
+    text-decoration: line-through;
+}
+
+button{
+    font-family: Montserrat;
+    border: none;
     border-radius: 5px;
-    margin-inline: auto;
-    margin-block: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
 }
 
-a{
-    color: black;
-    font-family: Inter;
+button:hover{
+    background-color: hsl(158, 36%, 29%);
 }
 
-h2{
-    font-family: Inter;
-    font-weight: 400;
-    color: hsl(240, 42%, 17%);
+.cart-icon{
+    margin-right: 8px;
 }
 
-.main-header{
-    font-size: 60px;
+.cart {
+    display: flex;
+    justify-content: center;
 }
 
-@media(max-width: 1000px) and (min-width: 650px){
-    .container{
-        grid-template-columns: 1fr 1fr;
+@media (min-width: 426px){
+    .card{
+     width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(max-width: 650px){
-    .container{
-        grid-template-columns: 1fr;
+@media (max-width: 425px){
+    body{
+        height: auto;
+        margin: 20px;
+    }
+    .card{
+        display: grid;
+        row-gap: 0;
+        width: 85vw;
+        margin-block: 20px;
+    }
+    .perfume{
+        background-image: url(/frontend-mentor-solutions-rahul/5.product-preview-card-component-main/images/image-product-mobile.jpg);
+        border-radius: 5px 5px 0px 0px;
+        background-size: cover;
+        width: 100%;
+        height: 15rem;
     }
 }
+
