@@ -11,25 +11,36 @@ body{
     font-family: 'Space Grotesk';
     text-align: center;
     margin-top: 2rem;
-    background-color: #f9dcc4;
+    background-image: repeating-linear-gradient(0deg, rgba(180,176,176, 0.2) 0px, rgba(180,176,176, 0.2) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgba(180,176,176, 0.2) 0px, rgba(180,176,176, 0.2) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, rgb(238,226,220),rgb(238,226,220));
+    color: hsl(240, 62%, 8%);
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3rem;
-    padding-inline: 20px;
+    padding: 0px 20px;
 }
 
 .card{
-    width: 80%;
+    margin-inline: auto;
+    width: 70%;
     margin-block: 1.5rem;
-    background-color: #fec89a;
+    background-color: #eec6b3;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.card img{
+    width: 95%;
+    border-radius: 5px;
+    margin-inline: auto;
+    margin-block: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 a{
@@ -40,4 +51,21 @@ a{
 h2{
     font-family: Inter;
     font-weight: 400;
+    color: hsl(240, 42%, 17%);
+}
+
+.main-header{
+    font-size: 60px;
+}
+
+@media(max-width: 1000px) and (min-width: 650px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 650px){
+    .container{
+        grid-template-columns: 1fr;
+    }
 }
