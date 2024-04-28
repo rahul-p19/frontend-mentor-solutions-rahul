@@ -3,7 +3,7 @@ html {
     margin:0;
 }
 body{
-    background-image: url(/images/bg-pattern-bottom.svg);
+    background-image: url(/frontend-mentor-solutions-rahul/11.profile-card-component-main/images/bg-pattern-bottom.svg);
     background-color: hsl(185, 75%, 39%);
     background-size:cover;
     height: 100%;

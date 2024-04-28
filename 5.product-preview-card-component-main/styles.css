@@ -18,7 +18,7 @@ body{
 }
 
 .perfume{
-    background-image: url(/images/image-product-desktop.jpg);
+    background-image: url(/frontend-mentor-solutions-rahul/5.product-preview-card-component-main/images/image-product-desktop.jpg);
     background-size: cover;
     border-radius: 8px 0px 0px 8px;
 }
@@ -84,6 +84,9 @@ button:hover{
     .card{
         display: grid;
         grid-template-rows: 1fr 1fr;
+    }
+    .perfume{
+        background-image: url(/frontend-mentor-solutions-rahul/5.product-preview-card-component-main/images/image-product-mobile.jpg);
     }
 }
 
