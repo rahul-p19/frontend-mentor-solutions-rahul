@@ -23,12 +23,12 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 5px;
-    background-image: url(/images/image-equilibrium.jpg);
+    background-image: url(/frontend-mentor-solutions-rahul/7.nft-preview-card-component-main/images/image-equilibrium.jpg);
     background-size: cover;
 }
 
 .equilibrium:hover{
-    background-image: url(/images/icon-view.svg),linear-gradient(hsla(178, 100%, 50%, 0.334),hsl(178, 100%, 50%,0.334)),url(/images/image-equilibrium.jpg);
+    background-image: url(/frontend-mentor-solutions-rahul/7.nft-preview-card-component-main/images/icon-view.svg),linear-gradient(hsla(178, 100%, 50%, 0.334),hsl(178, 100%, 50%,0.334)),url(/frontend-mentor-solutions-rahul/7.nft-preview-card-component-main/images/image-equilibrium.jpg);
     background-size: 40px,cover,cover;
     background-repeat: no-repeat;
     background-position: center;
