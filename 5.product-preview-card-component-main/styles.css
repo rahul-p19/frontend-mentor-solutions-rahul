@@ -80,7 +80,7 @@ button:hover{
     justify-content: center;
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     .card{
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -90,7 +90,7 @@ button:hover{
     }
 }
 
-@media (min-width: 376px){
+@media (min-width: 426px){
     .card{
      width: 600px;
     display: grid;
